@@ -17,29 +17,29 @@
 </table>
 </div>
 
-<div align="center">
-<span style="font-weight:bold;">GUÍA DE LABORATORIO</span><br />
+
+<div align="text-center">
+    <theader>
+        <span style="font-weight:bold;">GUÍA DE LABORATORIO</span><br />
+    </theader>
 </div>
 
 <table>
-<theader>
-<tr><th colspan="2">INFORMACIÓN BÁSICA</th></tr>
-</theader>
+    <theader>
+        <tr><th colspan="2">INFORMACIÓN BÁSICA</th></tr>
+    </theader>
 <tbody>
 
-<tr><td>TÍTULO DE LA PRÁCTICA:</td><td>Calculadora</td></tr>
+<tr><td>TÍTULO DE LA PRÁCTICA:</td><td>Examen Parcial Ingeniería Web</td></tr>
 <tr><td colspan="2">RECURSOS A UTILIZAR:
 <ul>
-<li><a href="https://guides.github.com/">https://guides.github.com/</a></li>
-<li><a href="https://git-scm.com/book/es/v2">https://git-scm.com/book/es/v2</a></li>
+<li><a href="https://www.codeigniter.com/">https://www.codeigniter.com/</a></li>
 </ul>
 </td>
 </<tr>
-<tr><td colspan="2">DOCENTES:
+<tr><td colspan="2">ALUMNO:
 <ul>
 <li>Jonathan Aguirre Soto (jaguirres@ulasalle.edu.pe)</li>
-<li>Hector Avila Gonzales (havilag@ulasalle.edu.pe)</li>
-<li>Valeria Bravo Saines (vbravos@ulasalle.edu.pe)</li>
 </ul>
 </td>
 </<tr>
@@ -55,36 +55,26 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/codeigniter4/CodeIgniter4/pulls)
 <br>
 
-## What is CodeIgniter?
+## ¿Qué es CodeIgniter?
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](http://codeigniter.com).
+CodeIgniter es un marco web completo de PHP que es ligero, rápido, flexible y seguro. 61 Se puede encontrar más información en el [sitio oficial] (http://codeigniter.com).
 
-This repository holds the source code for CodeIgniter 4 only.
-Version 4 is a complete rewrite to bring the quality and the code into a more modern version,
-while still keeping as many of the things intact that has made people love the framework over the years.
+Este repositorio contiene el código fuente solo para CodeIgniter 4. 64 La versión 4 es una reescritura completa para llevar la calidad y el código a una versión más moderna. sesenta y cinco sin dejar de mantener intactas muchas de las cosas que han hecho que la gente ame el marco a lo largo de los años. 
 
-More information about the plans for version 4 can be found in [the announcement](http://forum.codeigniter.com/thread-62615.html) on the forums.
+Se puede encontrar más información sobre los planes para la versión 4 en [el anuncio] (http://forum.codeigniter.com/thread-62615.html) en los foros.
 
 ### Documentation
 
-The [User Guide](https://codeigniter4.github.io/userguide/) is the primary documentation for CodeIgniter 4.
+La [Guía del usuario] (https://codeigniter4.github.io/userguide/) es la documentación principal de CodeIgniter 4.
 
-The current **in-progress** User Guide can be found [here](https://codeigniter4.github.io/CodeIgniter4/).
-As with the rest of the framework, it is a work in progress, and will see changes over time to structure, explanations, etc.
+La Guía del usuario actual **en curso** se puede encontrar [aquí](https://codeigniter4.github.io/CodeIgniter4/). Al igual que con el resto del marco, es un trabajo en progreso y verá cambios con el tiempo en la estructura, las explicaciones, etc.
 
-You might also be interested in the [API documentation](https://codeigniter4.github.io/api/) for the framework components.
+También podría estar interesado en la [documentación de la API] (https://codeigniter4.github.io/api/) para los componentes del marco.
 
-## Important Change with index.php
+## Cambio importante en el xampp PHP.ini
 
-index.php is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+Nos dirigimos a nuestra aplicación Xampp, aún no inicializamos Apache. Nos dirigimos a Config y luego a PHP.ini
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
-
-**Please** read the user guide for a better explanation of how CI4 works!
 
 ## Repository Management
 
