@@ -128,7 +128,7 @@ Y entramos al apache cambiando la URL, en vez de "dashboard" pondremos el nombre
 
 Nos dirigimos a la carpeta Controllers y creamos un nuevo archivo.php a partir de nuestro Home.php, en mi caso le puse Base.php:
 
--  <td><img src="https://github.com/Jona2010/EP-IW-2022/blob/main/HM CONTROLLER.png?raw=true" alt="EPIS" style="width:50%; height:auto"/></td>
+-  <td><img src="https://github.com/Jona2010/EP-IW-2022/blob/main/HM CONTROLLER.png?raw=true" alt="EPIS" style="width:100%; height:auto"/></td>
 
 Dentro de nuestro archivo cambiamos la línea 9 del código:
 
