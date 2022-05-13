@@ -148,5 +148,5 @@ Y lo guardamos dentro de nuestra carpeta Codel4/app/Views:
 
 Luego la URL de nuestro servidor apache cambiará, finalmente obtendremos nuestro "Hola mundo":
 
--  <td><img src="https://github.com/Jona2010/EP-IW-2022/blob/main/HW CODEL4.png?raw=true" alt="EPIS" style="width:50%; height:auto"/></td>
+-  <td><img src="https://github.com/Jona2010/EP-IW-2022/blob/main/HW CODEL4.png?raw=true" alt="EPIS" style="width:100%; height:auto"/></td>
 
