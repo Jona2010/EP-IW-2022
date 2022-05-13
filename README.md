@@ -63,7 +63,7 @@ Este repositorio contiene el código fuente solo para CodeIgniter 4. 64 La versi
 
 Se puede encontrar más información sobre los planes para la versión 4 en [el anuncio] (http://forum.codeigniter.com/thread-62615.html) en los foros.
 
-### Documentation
+### Documentación
 
 La [Guía del usuario] (https://codeigniter4.github.io/userguide/) es la documentación principal de CodeIgniter 4.
 
@@ -71,60 +71,82 @@ La Guía del usuario actual **en curso** se puede encontrar [aquí](https://code
 
 También podría estar interesado en la [documentación de la API] (https://codeigniter4.github.io/api/) para los componentes del marco.
 
+## Descargamos nuestro framework Codel4
+
+Nos dirigimos a la página https://www.codeigniter.com/download y descargamos CodeEigniter4:
+
+-  <td><img src="https://github.com/Jona2010/EP-IW-2022/blob/main/FW CODEL4.png?raw=true" alt="EPIS" style="width:50%; height:auto"/></td>
+
+## Entramos a la carpeta Xampp
+
+Nos dirigimos a htdocs y extramos el codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a.zip, lo extramos y le cambiamos el nombre a la carpeta "Codel4" para una mejor identificación.
+
+-  <td><img src="https://github.com/Jona2010/EP-IW-2022/blob/main/ZIP CODEL4.png?raw=true" alt="EPIS" style="width:50%; height:auto"/></td>
+
 ## Cambio importante en el xampp PHP.ini
 
 Nos dirigimos a nuestra aplicación Xampp, aún no inicializamos Apache. Nos dirigimos a Config y luego a PHP.ini
 
+-  <td><img src="https://github.com/Jona2010/EP-IW-2022/blob/main/FW PHP INI.png?raw=true" alt="EPIS" style="width:50%; height:auto"/></td>
 
-## Repository Management
+Buscamos "extension intl" el cual estará con un ";" delante; es decir, se encontrará comentado y le borraremos dicho ";". 
 
-CodeIgniter is developed completely on a volunteer basis. As such, please give up to 7 days
-for your issues to be reviewed. If you haven't heard from one of the team in that time period,
-feel free to leave a comment on the issue so that it gets brought back to our attention.
+Luego iniciamos el apache mediante el XAMPP:
 
-We use GitHub issues to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+-  <td><img src="https://github.com/Jona2010/EP-IW-2022/blob/main/APACHE XAMPP.png?raw=true" alt="EPIS" style="width:50%; height:auto"/></td>
+-  <td><img src="https://github.com/Jona2010/EP-IW-2022/blob/main/APACHE.png?raw=true" alt="EPIS" style="width:50%; height:auto"/></td>
 
-If you raise an issue here that pertains to support or a feature request, it will
-be closed! If you are not sure if you have found a bug, raise a thread on the forum first -
-someone else may have encountered the same thing.
+## Entramos en la carpeta Codel4
 
-Before raising a new GitHub issue, please check that your bug hasn't already
-been reported or fixed.
+Abrimos mediante el terminal de windows la carpeta, de la siguiente manera cd C:\xampp\htdocs\Codel4, creamos un repositorio nuevo en nuestro GitHub e inicializamos nuestro Git mediante el siguiente comando mostrado en la imagen:
 
-We use pull requests (PRs) for CONTRIBUTIONS to the repository.
-We are looking for contributions that address one of the reported bugs or
-approved work packages.
+-  <td><img src="https://github.com/Jona2010/EP-IW-2022/blob/main/CMD CODEL4.png?raw=true" alt="EPIS" style="width:50%; height:auto"/></td>
 
-Do not use a PR as a form of feature request.
-Unsolicited contributions will only be considered if they fit nicely
-into the framework roadmap.
-Remember that some components that were part of CodeIgniter 3 are being moved
-to optional packages, with their own repository.
+Crearemons un README.md de prueba: 
 
-## Contributing
+-  <td><img src="https://github.com/Jona2010/EP-IW-2022/blob/main/README PRUEBA.png?raw=true" alt="EPIS" style="width:50%; height:auto"/></td>
 
-We **are** accepting contributions from the community!
+## Luego abrimos la carpeta Codel4
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/contributing/README.md).
+Usamos en el editor de texto de nuestra preferencia, en mi caso uso SublimeText https://www.sublimetext.com/download 
 
-## Server Requirements
+-  <td><img src="https://github.com/Jona2010/EP-IW-2022/blob/main/SUBLIME CODEL 4.png?raw=true" alt="EPIS" style="width:50%; height:auto"/></td>
 
-PHP version 7.3 or higher is required, with the following extensions installed:
+Nos dirigimos al archivo index.php y cambiamos la línea 20 del código:
 
+-  $pathsConfig = FCPATH . '../app/Config/Paths.php'; 
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+Quedaría de la siguiente manera:
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+-  $pathsConfig = FCPATH . './app/Config/Paths.php';
 
-- json (enabled by default - don't turn it off)
-- xml (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
+Y entramos al apache cambiando la URL, en vez de "dashboard" pondremos el nombre de nuestra carpeta "Codel4" así estaremos usando el framework mediante apache, entonces finalmente quedaría así:
 
-## Running CodeIgniter Tests
+-  <td><img src="https://github.com/Jona2010/EP-IW-2022/blob/main/CODEL4.png?raw=true" alt="EPIS" style="width:50%; height:auto"/></td>
 
-Information on running the CodeIgniter test suite can be found in the [README.md](tests/README.md) file in the tests directory.
-"# EP-IW-2022" 
+## Hola Mundo en Codel4
+
+Nos dirigimos a la carpeta Controllers y creamos un nuevo archivo.php a partir de nuestro Home.php, en mi caso le puse Base.php:
+
+-  <td><img src="https://github.com/Jona2010/EP-IW-2022/blob/main/HM CONTROLLER.png?raw=true" alt="EPIS" style="width:50%; height:auto"/></td>
+
+Dentro de nuestro archivo cambiamos la línea 9 del código:
+
+-  return view('welcome_message');
+
+Quedaría de la siguiente manera:
+
+-  return view('hola_mundo');
+
+## Creamos un archivo hola_mundo.php
+
+-  <td><img src="https://github.com/Jona2010/EP-IW-2022/blob/main/HM VIEW.png?raw=true" alt="EPIS" style="width:50%; height:auto"/></td>
+
+Y lo guardamos dentro de nuestra carpeta Codel4/app/Views:
+
+-  <td><img src="https://github.com/Jona2010/EP-IW-2022/blob/main/RUTA VIEW.png?raw=true" alt="EPIS" style="width:50%; height:auto"/></td>
+
+Luego la URL de nuestro servidor apache cambiará, finalmente obtendremos nuestro "Hola mundo":
+
+-  <td><img src="https://github.com/Jona2010/EP-IW-2022/blob/main/HW CODEL4.png?raw=true" alt="EPIS" style="width:50%; height:auto"/></td>
+
